@@ -50,8 +50,6 @@ export default defineComponent ({
     width:100%; 
      height:100%;
     display: fill;
-    /* justify-content: space-around; */
-    /* background-position: center;  */
     background-repeat: no-repeat; 
     background-size: cover;
     position: relative;
@@ -103,7 +101,7 @@ export default defineComponent ({
  .button1 {
    display: flex;
    justify-content: left;
-   flex-direction: row;
+   
    flex-wrap: wrap;
    background-color: #0891B2 ;
   color: white;
@@ -133,5 +131,63 @@ button:hover {
   opacity: 0.9;
   transition: 150ms;
 }
+
+@media screen and (max-width: 600px) {
+  .description {
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  div.buttonContainer {
+   margin-left: 2rem;
+   display:  flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: wrap;
+   
+ }
+}
+@media screen and (max-width: 600px) {
+  .button1 {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   background-color: #0891B2 ;
+  color: white;
+  border: 1px solid r#034a5c ;
+  padding: 0.25em 0.25em;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: 150ms;
+  margin: 0em 1.5em 0.5em 1.5em;
+}
+}
+@media screen and (max-width: 600px) {
+  .button2 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center;
+   background-color: transparent;
+  color: white;
+  border: 1px solid r#034a5c ;
+  padding: 0.25em 0.25em;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: 150ms;
+  margin: 0em 1.5em 0.5em 1.5em;
+}
+}
+@media screen and (max-width: 600px) {
+  .textContainer {
+   
+   display: flex;
+   flex-direction:column;
+   justify-content: flex-start;
+   align-items: left;
+   margin-left: 2rem;
+ }
+}
+
  
 </style>
